@@ -56,4 +56,16 @@ describe('Post Endpoint', () => {
     expect(res.statusCode).toEqual(400)
     expect(res.body).toEqual({error:"Card limit is required"})
   })
+  it('should create return cards list', async () => {
+    const res = await request(app)
+      .get('/api/cards')
+      .send()
+    expect(res.statusCode).toEqual(200)
+    expect(res.body).toEqual([{
+        name:'Peter',
+        number: '4573 2943 5702 6002 ',
+        balance:0,
+        limit: 100
+      }])
+  })
 })
