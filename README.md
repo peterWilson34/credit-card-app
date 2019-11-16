@@ -14,6 +14,12 @@ to run the app you should start the server side first then the client side as fo
 `npm i`  
 `npm start`
 
+## Screenshot
+
+![Screenshot](screenshot.png?raw=true)
+
+
+
 ## for the credit card number validation 
 
 I've used this package https://www.npmjs.com/package/cc-validate which based on Luhn to validated the credit card numbers.
