@@ -1,0 +1,37 @@
+@import '../index.scss';
+
+form{
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: $bg-light;
+    padding: 16px;
+    .inputGroup{
+        margin-bottom: 16px;
+        label{
+            color: #fff;
+            display: block;
+            text-align: left;
+            margin-bottom: 8px;
+        }
+        input{
+            background-color: transparent;
+            border:1px solid #eee;
+            padding: 12px 18px;
+            color: #fff;
+            width: 100%;
+        }
+    }
+    .error{
+        &:first-of-type{
+            margin-top: 8px;
+        }
+        color: $error;
+        margin: 4px 0 ;
+    }
+
+}
+.emptyState{
+    color: $primary;
+    text-align: center;
+}
